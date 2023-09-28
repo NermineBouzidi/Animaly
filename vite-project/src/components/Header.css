@@ -1,0 +1,28 @@
+/* Header.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add your additional Tailwind styles here if needed */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: slide-down 0.3s ease;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
