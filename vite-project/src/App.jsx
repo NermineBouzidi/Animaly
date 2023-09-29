@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import { Home } from "./pages/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
