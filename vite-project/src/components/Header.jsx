@@ -1,4 +1,5 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typed } from "react-typed";
 
 function Header() {
   const [txt] = useTypewriter({
@@ -23,6 +24,7 @@ function Header() {
               <Cursor />
             </span>
           </h1>
+
           <div className="d-flex">
             <input
               className="form-control me-2"
